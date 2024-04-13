@@ -1,0 +1,40 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; 
+    padding: 20px; 
+    background-color: #f7f7f7; 
+    border-radius: 10px; 
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px; 
+}
+
+.popular hr {
+    width: 110px;
+    height: 2px;
+    border-radius: 4px;
+    background: #252525;
+    margin-bottom: 20px; 
+}
+
+.popular-item {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Cho phép các phần tử con tự động xuống dòng khi không đủ chỗ */
+    justify-content: center; /* Canh giữa các phần tử con */
+}
+
+.popular-item img {
+    transition: box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động cho box-shadow */
+}
+
+.popular-item img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng nổi bật khi di chuột qua */
+}

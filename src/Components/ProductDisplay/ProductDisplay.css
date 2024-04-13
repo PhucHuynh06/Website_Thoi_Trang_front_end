@@ -1,0 +1,110 @@
+.productdisplay {
+    display: flex;
+    margin: 0 auto; 
+    max-width: 1000px;
+    min-height: 140vh;
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 17px;
+    margin-right: 20px; 
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productdisplay-img-list img {
+    height: 100px;
+}
+
+.productdisplay-main-img {
+    width: 100%; /* Thay đổi kích thước hình ảnh chính để phù hợp với màn hình */
+    max-width: 400px; /* Giới hạn kích thước tối đa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+}
+
+.productdisplay-right {
+    margin: 0 auto; /* Canh giữa nội dung bên phải */
+    max-width: 400px; /* Giới hạn kích thước nội dung bên phải */
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 30px; /* Giảm kích thước tiêu đề */
+    font-weight: 700;
+    margin-bottom: 10px; /* Giảm khoảng cách giữa tiêu đề và sao đánh giá */
+}
+
+.productdisplay-right-stars {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Giảm khoảng cách giữa tiêu đề và sao đánh giá */
+    gap: 5px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+}
+
+.productdisplay-right-size h1 {
+    color: #656565;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các size được sắp xếp ngang */
+    gap: 10px; /* Giảm khoảng cách giữa các size */
+    margin: 20px 0px; /* Giảm khoảng cách với các thành phần khác */
+}
+
+.productdisplay-right-sizes div {
+    padding: 12px 20px; /* Giảm độ lớn của các nút size */
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.productdisplay-right button {
+    padding: 15px 30px; /* Giảm kích thước nút */
+    width: 100%; /* Lấp đầy toàn bộ phần tử cha */
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: #FF4141;
+    margin-bottom: 20px; /* Giảm khoảng cách với các thành phần khác */
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+
+.productdisplay-right-category {
+    margin-top: 10px;
+}
+
+.productdisplay-right-category span {
+    font-weight: 600;
+}

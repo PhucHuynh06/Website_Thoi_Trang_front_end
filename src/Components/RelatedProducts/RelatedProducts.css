@@ -1,0 +1,48 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Giảm khoảng cách giữa các phần tử con */
+    min-height: 140vh;
+    margin-bottom: 50px; /* Tạo một khoảng cách giữa relatedproducts và footer */
+}
+.relatedproducts h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.relatedproducts hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.relatedproducts-item {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các hình ảnh tự động xuống dòng khi không đủ không gian */
+    justify-content: center; /* Căn lề giữa cho các sản phẩm */
+}
+
+.relatedproducts-item img {
+    max-width: 80%; /* Giảm max-width của hình ảnh */
+    height: auto;
+    margin-bottom: 10px; /* Thêm margin dưới để tạo khoảng cách giữa các hình ảnh */
+    margin-right: 10px; /* Thêm margin bên phải để tạo khoảng cách giữa các hình ảnh */
+}
+
+.relatedproducts-item:last-child img {
+    margin-right: 0; /* Loại bỏ margin bên phải của hình ảnh cuối cùng trong mỗi dòng */
+}
+
+.relatedproducts-item img {
+    max-width: 80%; /* Giảm max-width của hình ảnh */
+    height: auto;
+    margin-bottom: 20px; /* Thêm margin dưới để tạo khoảng cách giữa các hình ảnh */
+    margin-right: 10px; /* Thêm margin bên phải để tạo khoảng cách giữa các hình ảnh */
+    transition: opacity 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho opacity */
+}
+
+.relatedproducts-item img:hover {
+    opacity: 0.8; /* Điều chỉnh độ trong suốt khi trỏ chuột vào */
+}
